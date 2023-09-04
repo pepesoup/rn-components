@@ -1,0 +1,12 @@
+{
+  "name": "rn-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pepesoup/rn-components.git",
+  "author": "pepesoup <jdunfalk@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "empty-npm-package": "^1.0.0"
+  }
+}
