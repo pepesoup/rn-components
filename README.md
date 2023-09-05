@@ -8,4 +8,4 @@ npx expo install --yarn
 
 # Env
 
-Run ./go.bash to view components demo
+Run ./go.bash to view components demo.
