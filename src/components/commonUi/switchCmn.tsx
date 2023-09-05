@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, ViewStyle } from 'react-native'
 import { Text, Switch as PaperSwitch, SwitchProps as PaperSwitchProps } from 'react-native-paper'
-import _ from 'lodash'
 //import { appThemeState } from '@app/app/theme/themeStates'
 import { useRecoilValue } from 'recoil'
 

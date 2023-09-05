@@ -1,13 +1,13 @@
 import React from 'react'
 import { View as NativeView, ViewProps as NativeViewProps } from 'react-native'
-import _ from 'lodash'
+import merge from 'ts-deepmerge'
 import { useRecoilValue } from 'recoil'
 //import { appThemeState } from '@app/app/theme/themeStates'
-import { IconButton, PaperProvider } from 'react-native-paper'
+import { IconButton, MD3Theme, PaperProvider } from 'react-native-paper'
 import { useNavigation } from '@react-navigation/native'
 
 export type ViewProps = NativeViewProps & {
-    theme: any
+    theme: MD3Theme
     transparent?: boolean
     navigateBack?: boolean
     centerContent?: boolean
@@ -25,7 +25,7 @@ const ScreenCmn = (props: ViewProps) => {
     const backgroundColor = transparent ? 'transparent' : theme.colors.background
     const justifyContent = centerContent ? { justifyContent: 'center' } : null
 
-    const mergedStyle = _.merge(
+    const mergedStyle = merge(
         {
             flex: 1,
             alignItems: 'center',
@@ -36,7 +36,7 @@ const ScreenCmn = (props: ViewProps) => {
             padding: 0,
             backgroundColor: backgroundColor,
         },
-        style
+        style || {}
     )
 
     const backButton = (
