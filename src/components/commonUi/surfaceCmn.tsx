@@ -3,7 +3,7 @@ import { Surface, Text } from 'react-native-paper'
 import { Pressable, StyleSheet, View } from 'react-native'
 import merge from 'ts-deepmerge'
 import { Shadow } from 'react-native-shadow-2'
-import TextCmn from './textCmn'
+import TextCmn from './text/textCmn'
 
 const SurfaceCmn = ({ onPress, text, size, style, children, containerStyle }: any) => {
     const _style = merge(
