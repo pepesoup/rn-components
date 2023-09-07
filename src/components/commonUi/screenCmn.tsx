@@ -1,27 +1,18 @@
-import React from 'react'
 import { View as NativeView, ViewProps as NativeViewProps } from 'react-native'
 import merge from 'ts-deepmerge'
-import { useRecoilValue } from 'recoil'
-//import { appThemeState } from '@app/app/theme/themeStates'
-import { IconButton, MD3Theme, PaperProvider } from 'react-native-paper'
+import { IconButton, MD3Theme, PaperProvider, useTheme } from 'react-native-paper'
 import { useNavigation } from '@react-navigation/native'
 
 export type ViewProps = NativeViewProps & {
-    theme: MD3Theme
     transparent?: boolean
     navigateBack?: boolean
     centerContent?: boolean
 }
 
-/**  
-TODO: 
-    make theme a dependency
-    Remove theme from props
-*/
 const ScreenCmn = (props: ViewProps) => {
     const navigation = useNavigation<any>()
-    const { theme, children, style, transparent, navigateBack, centerContent, ...restProps } = props
-    //const theme = useRecoilValue(appThemeState)
+    const { children, style, transparent, navigateBack, centerContent, ...restProps } = props
+    const theme = useTheme()
     const backgroundColor = transparent ? 'transparent' : theme.colors.background
     const justifyContent = centerContent ? { justifyContent: 'center' } : null
 
@@ -29,8 +20,6 @@ const ScreenCmn = (props: ViewProps) => {
         {
             flex: 1,
             alignItems: 'center',
-            //justifyContent: 'flex-start',
-            //justifyContent: 'center',
             justifyContent,
             margin: 0,
             padding: 0,
@@ -63,4 +52,5 @@ const ScreenCmn = (props: ViewProps) => {
         </NativeView>
     )
 }
+
 export default ScreenCmn

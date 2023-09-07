@@ -9,7 +9,6 @@ import merge from 'ts-deepmerge'
 const TextInputCmn = (props: PaperTextInputProps) => {
     const { mode, style, outlineStyle, ...restProps } = props
     const mergedStyle = merge(
-        {},
         {
             minWidth: '100%',
             marginVertical: 10,
@@ -18,7 +17,6 @@ const TextInputCmn = (props: PaperTextInputProps) => {
         style || {}
     )
     const mergedOutlineStyle = merge(
-        {},
         {
             borderwidth: 1,
             marginVertical: 5,
