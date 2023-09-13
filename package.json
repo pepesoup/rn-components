@@ -14,9 +14,7 @@
         "react-native": "*",
         "react-native-safe-area-context": "*",
         "react-native-vector-icons": "*",
-        "react-native-paper": "*",
-        "recoil": "*",
-        "recoil-nexus": "*"
+        "react-native-paper": "*"
     },
     "dependencies": {
         "expo": "^49.0.9",
@@ -35,8 +33,6 @@
         "react-native-safe-area-context": "4.6.3",
         "react-native-screens": "~3.22.0",
         "react-native-vector-icons": "^10.0.0",
-        "recoil": "^0.7.7",
-        "recoil-nexus": "^0.5.0",
         "ts-deepmerge": "^6.2.0"
     },
     "devDependencies": {
