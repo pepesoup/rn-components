@@ -11,7 +11,7 @@ const TextInputCmn = (props: PaperTextInputProps) => {
     const mergedStyle = merge(
         {
             minWidth: '100%',
-            marginVertical: 10,
+            marginVertical: 0,
             backgroundColor: 'transparent',
         } as ViewStyle,
         style || {}
@@ -19,7 +19,7 @@ const TextInputCmn = (props: PaperTextInputProps) => {
     const mergedOutlineStyle = merge(
         {
             borderwidth: 1,
-            marginVertical: 5,
+            marginVertical: 0,
             borderColor: 'rgba(74, 68, 88, .5)',
         } as ViewStyle,
         outlineStyle || {}

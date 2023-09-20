@@ -32,7 +32,7 @@ export const KeyboardAwareScrollViewCmn = (props: Props) => {
                 style={{ flex: 1, width: '100%' }}
                 contentContainerStyle={{
                     alignItems: 'center',
-                    margin: 20,
+                    margin: 0,
                 }}
             >
                 {children}
