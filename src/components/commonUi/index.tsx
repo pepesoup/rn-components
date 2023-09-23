@@ -8,6 +8,9 @@ export { default as SwitchCmn } from './switchCmn'
 export { default as GapCmn } from './gapCmn'
 export { default as RowCmn } from './rowCmn'
 export { default as SurfaceCmn } from './surfaceCmn'
+export { default as IconCmn } from './iconCmn'
+export { default as AnimatedBadge } from './animatedBadge'
+
 /* links */
 import * as Links from './link'
 export { Links }
